@@ -29,7 +29,7 @@ Aplicación web SPA para que equipos de soporte técnico gestionen reportes de e
 
 ```bash
 # 1. Clona el repositorio
-git clone https://github.com/TU_USUARIO/issue-tracker.git
+git https://github.com/fquinterop/issue-tracker.git
 cd issue-tracker
 
 # 2. Instala dependencias
