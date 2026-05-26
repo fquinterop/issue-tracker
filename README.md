@@ -54,7 +54,7 @@ npm run build
 
 ## 🌐 Despliegue
 
-🔗 **[Ver aplicación en vivo](https://TU_PROYECTO.vercel.app)**
+🔗 **[Ver aplicación en vivo](https://issue-tracker-lyart-nine.vercel.app)**
 
 Desplegado en **Vercel** (conectando el repositorio de GitHub directamente).
 
