@@ -1,3 +1,8 @@
+# Nombre 
+--Felipe Antonio Quintero Pulgarin
+# cc 1
+--1128415543
+
 # 🐛 Issue Tracker — Sistema de Gestión de Incidencias
 
 Aplicación web SPA para que equipos de soporte técnico gestionen reportes de errores y bugs de manera eficiente.
