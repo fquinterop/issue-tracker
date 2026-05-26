@@ -24,8 +24,8 @@ function DashboardPage() {
   const filtered = issues.filter(issue => {
     const matchesStatus   = filterStatus   === 'Todos'  || issue.estado    === filterStatus
     const matchesPriority = filterPriority === 'Todas'  || issue.prioridad === filterPriority
-    const matchesSearch   = issue.titulo.toLowerCase().includes(search.toLowerCase()) ||
-                            issue.descripcion.toLowerCase().includes(search.toLowerCase())
+    const matchesSearch = (issue.titulo ?? '').toLowerCase().includes(search.toLowerCase()) ||
+                      (issue.descripcion ?? '').toLowerCase().includes(search.toLowerCase())
     return matchesStatus && matchesPriority && matchesSearch
   })
 
