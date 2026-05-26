@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface-50 text-surface-900 font-body antialiased;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 20% -10%, rgba(74,97,250,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 40% at 80% 110%, rgba(112,137,255,0.06) 0%, transparent 60%);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-2xl border border-surface-200 shadow-sm;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-4 py-2.5 bg-brand-600 text-white font-body font-medium rounded-xl
+           hover:bg-brand-700 active:scale-95 transition-all duration-150 text-sm;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-4 py-2.5 bg-surface-100 text-surface-900 font-body font-medium rounded-xl
+           hover:bg-surface-200 active:scale-95 transition-all duration-150 text-sm border border-surface-200;
+  }
+
+  .btn-danger {
+    @apply inline-flex items-center gap-2 px-4 py-2.5 bg-red-50 text-red-600 font-body font-medium rounded-xl
+           hover:bg-red-100 active:scale-95 transition-all duration-150 text-sm border border-red-200;
+  }
+
+  .input {
+    @apply w-full px-3.5 py-2.5 bg-surface-50 border border-surface-200 rounded-xl text-sm
+           placeholder:text-surface-200/80 focus:outline-none focus:ring-2 focus:ring-brand-500/30
+           focus:border-brand-400 transition-all duration-150;
+  }
+
+  .label {
+    @apply block text-xs font-medium text-surface-800/70 mb-1.5 uppercase tracking-wider;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium font-mono;
+  }
+}
+
+/* SweetAlert2 custom theme */
+.swal2-popup {
+  font-family: 'DM Sans', sans-serif !important;
+  border-radius: 1rem !important;
+}
+
+.swal2-title {
+  font-family: 'Syne', sans-serif !important;
+}
